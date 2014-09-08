@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'activeadmin', github: 'activeadmin'
+gem 'active_admin_editor'
 gem 'devise'
 
 # Use ActiveModel has_secure_password
