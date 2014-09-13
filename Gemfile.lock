@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/activeadmin/activeadmin.git
+  remote: https://github.com/activeadmin/activeadmin.git
   revision: 5e114b7d9cac1e8a4ad83e972b24c0cb5b491fce
   specs:
     activeadmin (1.0.0.pre)
@@ -90,6 +90,13 @@ GEM
     execjs (2.2.1)
     formtastic (2.3.1)
       actionpack (>= 3.0)
+    haml (4.0.5)
+      tilt
+    haml-rails (0.5.3)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 3.1, < 5.0)
+      railties (>= 4.0.1)
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
@@ -269,10 +276,13 @@ DEPENDENCIES
   activeadmin!
   coffee-rails (~> 4.0.0)
   devise
+  haml
+  haml-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
   rails (= 4.1.5)
+  sass
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
