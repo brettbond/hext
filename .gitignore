@@ -21,3 +21,9 @@
 
 # Ignore generated assets
 public/assets/*
+
+# Ignore mac stuff
+.DS_Store
+
+# Ignore emacs backups
+.*~
