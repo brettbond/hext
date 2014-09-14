@@ -1,0 +1,8 @@
+%h1 Select a hex
+
+- @hex_categories.each do |cat|
+  .section_header
+    %b=cat.name
+    - cat.hexes.each do |hex|
+      .hex_row
+        = hex.hex_text.html_safe

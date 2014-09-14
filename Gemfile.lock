@@ -33,22 +33,6 @@ GEM
       erubis (~> 2.7.0)
     active_admin_editor (1.1.0)
       activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
-      activeadmin (>= 0.4.0)
       ejs
       rails (>= 3.0.0)
     activemodel (4.1.5)
@@ -153,6 +137,9 @@ GEM
       activesupport (>= 3.0)
       i18n
       polyamorous (~> 1.1)
+    ratchet-rails (0.0.3)
+      actionpack (>= 3.0)
+      railties (>= 3.0)
     rdoc (4.1.2)
       json (~> 1.4)
     responders (1.0.0)
@@ -166,7 +153,6 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -182,81 +168,6 @@ GEM
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
-      polyglot (>= 0.3.1)
       polyglot (>= 0.3.1)
     turbolinks (2.3.0)
       coffee-rails
@@ -282,10 +193,10 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 4.1.5)
+  ratchet-rails
   sass
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
-  spring
   sqlite3
   turbolinks
   uglifier (>= 1.3.0)

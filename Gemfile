@@ -2,8 +2,11 @@ source 'https://rubygems.org'
 
 ruby '2.1.2'
 
+gem 'activeadmin', :git => 'https://github.com/activeadmin/activeadmin.git'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
+
 # Use sqlite3 as the database for Active Record (development and test)
 gem 'sqlite3', :group => [:development, :test]
 gem "pg", :group => :production
@@ -28,15 +31,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+# gem 'spring',        group: :development
 
-gem 'activeadmin', :git => 'https://github.com/activeadmin/activeadmin.git'
 
 gem 'active_admin_editor'
 gem 'devise'
 gem 'haml'
 gem "haml-rails"
 gem 'sass'
+
+gem 'ratchet-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
