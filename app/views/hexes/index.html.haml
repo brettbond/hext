@@ -1,8 +1,23 @@
-%h1 Select a hex
+.top_bar
+  %h1 Select a Hex
 
-- @hex_categories.each do |cat|
-  .section_header
-    %b=cat.name
-    - cat.hexes.each do |hex|
-      .hex_row
-        = hex.hex_text.html_safe
+.wrapper
+  - @hex_categories.each do |cat|
+    .section_header
+      %b=cat.name
+      - cat.hexes.each do |hex|
+        .hex_row{:id => hex.id}
+          = hex.hex_text.html_safe
+
+:javascript
+  $('.hex_row').on('click', function(event){
+    // deselect last
+    $('.hex_row.selected').attr('class', 'hex_row')
+    // select row
+    $(event.target).attr('class','hex_row selected');
+
+    // pause a moment to show selection then navigate to hex page
+    setInterval(function () {
+      document.location.href = '/hexes/'+event.target.id;
+    }, 200);
+  });

@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'hexes#index'
 
+  # if the user has javascript disabled show a notice
+  get "/no_js", to: "pages#no_js", as: :no_js_page
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

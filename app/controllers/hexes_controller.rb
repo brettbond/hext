@@ -5,4 +5,8 @@ class HexesController < InheritedResources::Base
     @hex_categories = HexCategory.all
   end
 
+  def show
+    @hex = Hex.find(params[:id])
+  end
+
 end

@@ -7,18 +7,62 @@ $primary-color: #333;
 
 body {
   font: 100% $font-stack;
+  font-size: 18px;
   color: $primary-color;
+  margin:0;
+ 	padding:0;
+
+  // disable text selection
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.wrapper {
+  margin-top: 140px;
+}
+
+.top_bar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  text-align: center;
+}
+
+h1 {
+   font-size: 600%;
 }
 
 .section_header {
+  padding: 0px 10px 0px 10px;
   border: 1px solid #ccc;
+  font-size: 200%;
+  line-height: 2em;
   color: #333;
   background-color: #ddd;
 }
 
 .hex_row {
   border: 1px solid #ccc;
-  padding: 10px;
+  line-height: 1.3em;
+  padding: 15px;
   color: #333;
   background-color: #fff;
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+.hex {
+  text-align: center;
+  line-height: 1.3em;
+  font-size: 200%;
 }
