@@ -17,7 +17,9 @@
     $(event.target).attr('class','hex_row selected');
 
     // pause a moment to show selection then navigate to hex page
+    var intervalId =
     setInterval(function () {
+      clearInterval(intervalId);
       document.location.href = '/hexes/'+event.target.id;
     }, 200);
   });
