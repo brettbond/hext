@@ -1,0 +1,38 @@
+$top-bar-height: 140px;
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  font-size: 18px;
+  color: $primary-color;
+  margin:0;
+ 	padding:0;
+}
+
+.wrapper {
+  margin-top: $top-bar-height;
+}
+
+.top_bar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  text-align: center;
+}
+
+.alert{
+  font:200% $font-stack;
+  margin-top: $top-bar-height;
+  padding: 10px 20px 10px 20px;
+  background-color: lightyellow;
+}
+
+.notice{
+  margin-top: $top-bar-height;
+  background-color: lightgreen;
+}

@@ -2,32 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
-
-body {
-  font: 100% $font-stack;
-  font-size: 18px;
-  color: $primary-color;
-  margin:0;
- 	padding:0;
-}
-
-.wrapper {
-  margin-top: 140px;
-}
-
-.top_bar {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: fixed;
-  height: 80px;
-  width: 100%;
-  top: 0;
-  background-color: white;
-  text-align: center;
-}
-
 h1 {
    font-size: 600%;
 }

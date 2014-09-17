@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'hex_message/create'
-
   resources :hex_categories
   resources :hexes
   resources :hex_messages

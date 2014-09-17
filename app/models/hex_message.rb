@@ -1,3 +1,3 @@
 class HexMessage < ActiveRecord::Base
-  has_one Hex
+  belongs_to :hex
 end
