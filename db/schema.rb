@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140908021924) do
+ActiveRecord::Schema.define(version: 20140917205119) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -48,6 +48,16 @@ ActiveRecord::Schema.define(version: 20140908021924) do
 
   create_table "hex_categories", force: true do |t|
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "hex_messages", force: true do |t|
+    t.string   "from"
+    t.string   "to"
+    t.integer  "hex_id"
+    t.string   "customMessage"
+    t.integer  "in_reply_to_hex"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

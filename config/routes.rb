@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :hex_categories
+  get 'hex_message/create'
 
+  resources :hex_categories
   resources :hexes
+  resources :hex_messages
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
 
   # if the user has javascript disabled show a notice
   get "/no_js", to: "pages#no_js", as: :no_js_page
+  get "/contacts", to: "pages#contacts", as: :contacts
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

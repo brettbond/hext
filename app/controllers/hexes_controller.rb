@@ -8,5 +8,4 @@ class HexesController < InheritedResources::Base
   def show
     @hex = Hex.find(params[:id])
   end
-
 end

@@ -1,2 +1,10 @@
+%h1 Your Hext
+
 .hex
   = @hex.hex_text.html_safe
+%p
+%h2 Enter the phone number to Hext
+
+= form_for :hex_message, :url => {:controller => 'hex_messages', :action => 'create'} do |f|
+  = f.telephone_field :from
+  = f.submit "Send Hext"
