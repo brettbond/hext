@@ -5,7 +5,7 @@ class HexMessagesController < ApplicationController
 
         redirect_to @hex_message
       else
-        redirect_to root_url, alert: "Forces conspired to deny your hex."
+        redirect_to root_url, alert: 'Forces conspired to deny your hex.'
       end
   end
 
