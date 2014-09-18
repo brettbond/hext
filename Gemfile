@@ -1,15 +1,17 @@
 source 'https://rubygems.org'
 
 ruby '2.1.2'
+gem 'rails', '4.1.5'
 
 gem 'activeadmin', :git => 'https://github.com/activeadmin/activeadmin.git'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
-
 # Use sqlite3 as the database for Active Record (development and test)
 gem 'sqlite3', :group => [:development, :test]
+
+# Use Postgres in production
 gem "pg", :group => :production
+# Heroku specific
+gem 'rails_12factor', :group => :production
 
 
 # Use SCSS for stylesheets
