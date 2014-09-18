@@ -2,6 +2,11 @@ class HexMessagesController < ApplicationController
   def create
       @hex_message = HexMessage.new(hex_message_params)
       if @hex_message.save
+        @client = Twilio::REST::Client.new TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
+
+        @message = @client.account.messages.create({:to => "+1#{@hex_message.to}",
+                                           :from => TWILIO_CALLER_ID,
+                                           :body => ActionController::Base.helpers.strip_tags(@hex_message.hex.hex_text)})
 
         redirect_to @hex_message
       else

@@ -42,7 +42,7 @@ gem 'haml'
 gem "haml-rails"
 gem 'sass'
 
-gem 'ratchet-rails'
+gem 'twilio-ruby'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

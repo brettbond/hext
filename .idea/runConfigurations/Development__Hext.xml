@@ -7,7 +7,11 @@
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
     <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-    <envs />
+    <envs>
+      <env name="TWILIO_AUTH_TOKEN" value="12dc8198f241a707679ffd7290a361e4" />
+      <env name="TWILIO_ACCOUNT_SID" value="ACe6659d525a002496100c1db7d9277a90" />
+      <env name="TWILIO_CALLER_ID" value="+14157797750" />
+    </envs>
     <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
     <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
     <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
