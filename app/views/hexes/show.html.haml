@@ -1,11 +1,13 @@
-%h1 Your Hext
-
+%p
 .hex
   = @hex.hex_text.html_safe
 %p
-%h2 Enter the phone number to Hext
-
-= form_for :hex_message, :url => {:controller => 'hex_messages', :action => 'create'} do |f|
-  = f.telephone_field :to
-  = f.hidden_field :hex_id, :value => @hex.id
-  = f.submit "Send Hext"
+%hr.centered_rule
+%p
+#phone_form
+  %h2 Enter the phone number to Hext
+  = form_for :hex_message, :url => {:controller => 'hex_messages', :action => 'create'} do |f|
+    = f.telephone_field :to, :placeholder => "415-555-1212"
+    = f.hidden_field :hex_id, :value => @hex.id
+    %p
+    = f.submit "Send Hext"

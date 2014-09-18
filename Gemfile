@@ -43,6 +43,7 @@ gem "haml-rails"
 gem 'sass'
 
 gem 'twilio-ruby'
+gem 'phony'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

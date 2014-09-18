@@ -4,7 +4,7 @@ class HexMessagesController < ApplicationController
       if @hex_message.save
         @client = Twilio::REST::Client.new TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN
 
-        @message = @client.account.messages.create({:to => "+1#{@hex_message.to}",
+        @message = @client.account.messages.create({:to => @hex_message.normalize_to,
                                            :from => TWILIO_CALLER_ID,
                                            :body => ActionController::Base.helpers.strip_tags(@hex_message.hex.hex_text)})
 
